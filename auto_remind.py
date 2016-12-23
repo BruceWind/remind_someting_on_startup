@@ -3,10 +3,15 @@
 ###############################################################################
 import sys
 import socket
+import inspect
 import os
 import getpass
 import time
 import urllib2
+
+# cd to file dir
+file_dir= os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+os.chdir(file_dir)
 
 fp = open('remind.txt', 'r')
 remind_text=fp.readline()
