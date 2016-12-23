@@ -5,17 +5,19 @@ import getpass
 import os
 import time
 
-username = getpass.getuser()
-config=".config"
-autostart="autostart"
-
-
 sp="/"
 
-userhome = "/home/"+ username
+username = getpass.getuser()
+
+userhome = sp+"home"+sp+ username
+# config dir
+config=".config"
 config_dir = userhome + sp + config
+# autostart dir
+autostart="autostart"
 autostart_dir = config_dir + sp + autostart
 
+# get current dir
 pwd_dir=os.getcwd()
 
 os.chdir(userhome)
@@ -29,8 +31,8 @@ os.chdir(autostart_dir)
 fp = open('remind_someting_on_startup.desktop', 'w')
 fp.write(
 "[Desktop Entry] "+"\n"+
-" Name=auto_push_ip "+"\n"+
-" Comment=remind someting on startup "+"\n"+
+" Name=remind_someting_on_startup "+"\n"+
+" Comment=Remind someting on startup "+"\n"+
 " Exec=python "+pwd_dir+"/auto_remind.py" +"\n"+
 "Terminal=true"+"\n"+
 "MultipleArgs=false"+"\n"+
