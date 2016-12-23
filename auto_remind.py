@@ -8,6 +8,14 @@ import os
 import getpass
 import time
 import urllib2
+import datetime
+
+
+def is_am():
+    currentTime = datetime.datetime.now()
+    return currentTime.hour < 12
+
+
 
 # cd to file dir
 file_dir= os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
@@ -21,7 +29,7 @@ if(len(remind_text)==0):
     remind_text="1.今天打卡了吗？(y/n)"
 
 i = 1
-while (i <= 15):
+while (i <= 15 and  is_am()):
     time.sleep(1)
     str = raw_input("\n\t"+remind_text+"\n\t")
     if (str == "y" or str == "yes"):
