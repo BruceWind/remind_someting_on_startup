@@ -1,5 +1,8 @@
 #!/bin/sh
 ##########
+# if you clone in  ssh.
+#############
+
 # clear cache file.
 rm *~
 git add -A
