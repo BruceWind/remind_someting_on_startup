@@ -1,0 +1,2 @@
+# remind_someting_on_startup
+一个linux下的一个开机提醒的脚本，解决每天到公司早上忘记打卡的问题。
