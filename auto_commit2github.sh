@@ -1,5 +1,5 @@
 #!/bin/sh
 rm *~
 git add -A
-git commit -m "autocommit"
+git commit -m "shell autocommit"
 git push
