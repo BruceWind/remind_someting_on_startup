@@ -19,3 +19,8 @@ python gui_uninstall.py # install
 python nonui_install.py
 python nonui_uninstall.py
 ```
+
+
+效果：
+
+![](https://github.com/weizongwei5/remind_someting_on_startup/raw/be74e5052300e1e898256ff552753ab6f8d3e70f/remind_on_startup.png)
