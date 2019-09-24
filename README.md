@@ -15,10 +15,9 @@
 python gui_install.py # install
 python gui_uninstall.py # install
 
-# 非GUI的linux版本
-python nonui_install.py
-python nonui_uninstall.py
 ```
+~~非GUI的linux版本？没GUI无法提醒！！！~~
+
 
 
 效果：
