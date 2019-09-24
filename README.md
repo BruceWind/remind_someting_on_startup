@@ -1,4 +1,4 @@
-# remind_someting_on_startup
+# remind_someting_while_startup
 
 最初，我只是需要一个ubuntu下的一个开机提醒的脚本，解决每天到公司早上忘记打卡的问题。
 
